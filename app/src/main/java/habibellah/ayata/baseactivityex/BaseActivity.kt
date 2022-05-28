@@ -32,10 +32,10 @@ abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
         if(_binding == null)
             throw IllegalArgumentException("binding cannot be null")
         setContentView(requireNotNull(_binding).root)
-        //you do not need to override the on create method in concrete classes after the call here
-        //only if you have an addition
-        startWork()
-        addCallBacks()
+         //you do not need to override the on create method in concrete classes after the call here
+         //only if you have an addition
+         startWork()
+         addCallBacks()
     }
 
     //this methods are the common in first and second activity
