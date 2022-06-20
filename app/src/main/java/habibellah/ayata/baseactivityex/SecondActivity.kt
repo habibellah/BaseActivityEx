@@ -15,7 +15,7 @@ class SecondActivity : BaseActivity<ActivitySecondBinding>() {
 
     override fun addCallBacks() {
         //to do of SecondActivity
-        binding.clickme2.setOnClickListener { toast() }
+        binding!!.clickme2.setOnClickListener { toast() }
     }
 
 }

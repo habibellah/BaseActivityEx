@@ -25,7 +25,7 @@ abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
     private   var _binding: ViewBinding? = null
     //binding val is the variable will use in concrete activity
     protected val binding
-    get() =  _binding as VB
+    get() =  _binding as VB?
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _binding = bindingInflate(layoutInflater)

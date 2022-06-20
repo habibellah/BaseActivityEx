@@ -15,7 +15,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
     override fun addCallBacks() {
         //to do of MainActivity
-        binding.clickme1.setOnClickListener {
+        binding!!.clickme1.setOnClickListener {
             toast()
         }
 
